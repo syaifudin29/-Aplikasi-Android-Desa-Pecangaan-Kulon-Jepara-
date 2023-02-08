@@ -1,0 +1,57 @@
+package com.example.desa.ui.tampilan.profil
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.webkit.WebSettings
+import android.webkit.WebView
+import com.example.desa.R
+import com.example.desa.databinding.FragmentKelompokBinding
+import com.example.desa.databinding.FragmentLembagaBinding
+import com.example.desa.ui.home.HomeFragment
+
+
+class LembagaFragment : Fragment() {
+    private var _binding: FragmentLembagaBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+
+        _binding = FragmentLembagaBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        binding.actionbar.namaActionbar.setText("Lembaga")
+        binding.actionbar.backBar.setOnClickListener{
+            val fragmentP = HomeFragment()
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(R.id.nav_host_fragment_activity_main, fragmentP, HomeFragment::class.java.simpleName).addToBackStack(null)
+                commit()
+            }
+        }
+        binding.actionbar.profileBar.setOnClickListener{
+            val fragmentP = AccountFragment()
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager.beginTransaction().apply {
+                replace(R.id.nav_host_fragment_activity_main, fragmentP, AccountFragment()::class.java.simpleName).addToBackStack(null)
+                commit()
+            }
+        }
+        binding.webview.loadUrl("https://pecangaan.kakros.com/lembaga")
+
+
+        return root
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+
+}

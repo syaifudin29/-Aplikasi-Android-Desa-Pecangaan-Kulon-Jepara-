@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytitmpsn"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtJenisPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="BANTUAN"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gmrTitik"
+        app:layout_constraintStart_toEndOf="@+id/gmrTitik"
+        app:layout_constraintTop_toTopOf="@+id/gmrTitik" />
+
+    <TextView
+        android:id="@+id/txtJudulPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Kamu mendapatkan bantuan"
+        android:textColor="@color/hitam"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtJenisPesan"
+        app:layout_constraintTop_toBottomOf="@+id/txtJenisPesan" />
+
+    <TextView
+        android:id="@+id/txtDeskripsiPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Silahkan ambil di balaidesa jika tidak sibuk......"
+        android:textColor="@color/hitam"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txtJudulPesan"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulPesan" />
+
+    <ImageView
+        android:id="@+id/gmrTitik"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/linkaran" />
+
+    <TextView
+        android:id="@+id/txtWaktuPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 menit lalu"
+        android:textSize="10sp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="620dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDeskripsiPesan"
+        app:srcCompat="@drawable/garis_shape"
+        android:layout_marginTop="15dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

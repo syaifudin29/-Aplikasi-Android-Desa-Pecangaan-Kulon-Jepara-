@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="70dp"
+    tools:context=".ui.tampilan.profil.AccountFragment">
+    <include android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/user"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:background="#439A97"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#439A97"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginBottom="5dp"
+                    android:text="NIK"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hijaumuda"
+                    android:padding="5dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:enabled="false"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama Lengkap"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hijaumuda"
+                    android:padding="5dp"
+                    android:id="@+id/nama"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Tanggal lahir"
+                    android:layout_marginBottom="5dp"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ttl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hijaumuda"
+                    android:padding="5dp"
+                    android:enabled="false"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="RT / RW"
+                    android:layout_marginBottom="5dp"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rtrw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hijaumuda"
+                    android:padding="5dp"
+                    android:enabled="false"
+                    android:background="@color/white"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/lytlinier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Internet Desa"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20sp"
+            android:textColor="@color/hijaumuda"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:background="#22ff">
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Username" />
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/inteUser"
+                    android:gravity="left"
+                    android:padding="3dip"
+                   />
+            </TableRow>
+            <TableRow android:background="#22ff">
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Paket " />
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text=":" />
+                <TextView
+                    android:id="@+id/intePaket"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    />
+            </TableRow>
+            <TableRow android:background="#22ff">
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Harga " />
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text=":" />
+                <TextView
+                    android:id="@+id/inteHarga"
+                    android:gravity="left"
+                    android:padding="3dip"
+                   />
+            </TableRow>
+            <TableRow android:background="#22ff">
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Jatuh Tempo " />
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text=":" />
+                <TextView
+                    android:id="@+id/inteJatuh"
+                    android:gravity="left"
+                    android:padding="3dip"
+                   />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lytlinier1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/lytlinier">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Sampah"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="20sp"
+                    android:textColor="@color/hijaumuda"
+                    />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:background="#22ff">
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="Paket pelanggan " />
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/bankPaket"
+                            android:gravity="left"
+                            android:padding="3dip" />
+                    </TableRow>
+                    <TableRow android:background="#22ff">
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="Tagihan " />
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text=":" />
+                        <TextView
+                            android:id="@+id/bankTagihan"
+                            android:gravity="left"
+                            android:padding="3dip"
+                             />
+                    </TableRow>
+                    <TableRow android:background="#22ff">
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="Jatuh Tempo " />
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text=":" />
+                        <TextView
+                            android:id="@+id/bankJatuh"
+                            android:gravity="left"
+                            android:padding="3dip"
+                          />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnGantipassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/ubahpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@+id/lytlinier1" />
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/keluar"
+        android:foregroundGravity="center"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnGantipassword" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

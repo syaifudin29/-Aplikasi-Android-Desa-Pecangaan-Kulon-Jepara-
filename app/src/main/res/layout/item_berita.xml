@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/gambarberita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:id="@+id/media1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/black"
+            />
+
+        <TextView
+            android:id="@+id/txtberita"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Opening Rangkaian HUT RI ke 77 Desa Pecangaan Kulon"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

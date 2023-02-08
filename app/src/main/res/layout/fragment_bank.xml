@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.tampilan.profil.BankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        layout="@layout/actionbar"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Saldo Anda :"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Rp 60.000"
+                android:textColor="@color/hitam_opcatity"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/dollar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="154dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/jemputsmph"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/btnjenissmph"
+        android:layout_width="154dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/jenissmph"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/garis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Status Penjemputan"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtJudulStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Sampah Logam"
+                android:textColor="@color/hijaumuda"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="02 Desember 2023"
+                android:textColor="@color/hitam_opcatity"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/txtJudulStatus"
+                app:layout_constraintTop_toBottomOf="@+id/txtJudulStatus" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sukses"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtJudulStatus" />
+
+            <TextView
+                android:id="@+id/txtberat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat : 20 KG"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan : Rp 500.000"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtberat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtJudulStatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Sampah Plastik"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="02 Desember 2023"
+                android:textColor="@color/hitam_opcatity"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/txtJudulStatus2"
+                app:layout_constraintTop_toBottomOf="@+id/txtJudulStatus2" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/proses"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtJudulStatus2" />
+
+            <TextView
+                android:id="@+id/txtberat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat : 20 KG"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan : Rp 500.000"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtberat2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

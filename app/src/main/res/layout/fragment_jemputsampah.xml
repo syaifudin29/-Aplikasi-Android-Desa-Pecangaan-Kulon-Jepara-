@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tampilan.profil.JemputsampahFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar"/>
+
+    <TextView
+        android:id="@+id/textjemputsmapah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jemput Sampah"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textjemputsmapah">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="16sp"
+                android:text="Kategori Sampah"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompletetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Tanggal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputtanggal"
+                        android:inputType="date"
+                        android:layout_width="300dp"
+                        android:enabled="false"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/btnDate"
+                        android:layout_width="44dp"
+                        android:layout_height="46dp"
+                        android:background="@color/red"
+                        android:padding="10dp"
+                        android:src="@drawable/date" />
+<!--                    <Button-->
+<!--                        android:id="@+id/btndate"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Tanggal"/>-->
+                </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Catatan tambahan"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/catatan"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputdeskripsi"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:gravity="start"
+                    android:lines="5"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jemput Sekarang"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

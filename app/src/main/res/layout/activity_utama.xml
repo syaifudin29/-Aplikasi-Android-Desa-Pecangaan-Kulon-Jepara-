@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Utama">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="50dp"
+        android:layout_marginTop="-80dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atas" />
+    <TextView
+        android:id="@+id/sicangkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="SI CANGKUL"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:layout_marginTop="190dp"
+        android:layout_marginRight="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/philosopher_regular"
+        android:text="Ini adalah aplikasi sistem informasi desa yang dikemas semenarik mungkin untuk warga pecangaan kulon jepara dalam membantu membangun desa. "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/garis"
+        app:layout_constraintTop_toBottomOf="@+id/garis" />
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/sicangkul"
+        app:layout_constraintTop_toBottomOf="@+id/sicangkul"
+        app:srcCompat="@drawable/garis" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/deskripsi"
+        app:layout_constraintStart_toEndOf="@+id/sicangkul"
+        app:srcCompat="@drawable/petani" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi" />
+
+    <Button
+        android:id="@+id/btnSelanjutnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selanjutnya"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/hitam"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tampilan.profil.BantuanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Untuk Bantuan Silahkan Hubungi Kami"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar" />
+
+       <ImageView
+           android:id="@+id/colomWa"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:src="@drawable/kotakcard"
+           android:layout_marginTop="20dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView3"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgWa"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="@+id/colomWa"
+        app:layout_constraintStart_toStartOf="@+id/colomWa"
+        app:layout_constraintTop_toTopOf="@+id/colomWa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Whatsapp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgWa"
+        app:layout_constraintStart_toEndOf="@+id/imgWa"
+        app:layout_constraintTop_toTopOf="@+id/imgWa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="+628763562332"
+        android:textColor="@color/hitam"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colomWa"
+        app:layout_constraintEnd_toEndOf="@+id/colomWa"
+        app:layout_constraintTop_toTopOf="@+id/colomWa" />
+
+    <ImageView
+        android:id="@+id/colomtele"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/kotakcard"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colomWa"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgTele"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/telegram"
+        app:layout_constraintBottom_toBottomOf="@+id/colomtele"
+        app:layout_constraintStart_toStartOf="@+id/colomtele"
+        app:layout_constraintTop_toTopOf="@+id/colomtele" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="+628763562332"
+        android:textColor="@color/hitam"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colomtele"
+        app:layout_constraintEnd_toEndOf="@+id/colomtele"
+        app:layout_constraintTop_toTopOf="@+id/colomtele" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Telegram"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgTele"
+        app:layout_constraintStart_toEndOf="@+id/imgTele"
+        app:layout_constraintTop_toTopOf="@+id/imgTele" />
+
+
+
+    <ImageView
+        android:id="@+id/colomFb"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/kotakcard"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colomtele"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgFB"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/colomFb"
+        app:layout_constraintStart_toStartOf="@+id/colomFb"
+        app:layout_constraintTop_toTopOf="@+id/colomFb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Facebook"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFB"
+        app:layout_constraintStart_toEndOf="@+id/imgFB"
+        app:layout_constraintTop_toTopOf="@+id/imgFB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="pecangaan_kulon"
+        android:textColor="@color/hitam"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colomFb"
+        app:layout_constraintEnd_toEndOf="@+id/colomFb"
+        app:layout_constraintTop_toTopOf="@+id/colomFb" />
+
+
+    <ImageView
+        android:id="@+id/colomTwit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/kotakcard"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colomFb"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgTwit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="@+id/colomTwit"
+        app:layout_constraintStart_toStartOf="@+id/colomTwit"
+        app:layout_constraintTop_toTopOf="@+id/colomTwit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Twitter"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgTwit"
+        app:layout_constraintStart_toEndOf="@+id/imgTwit"
+        app:layout_constraintTop_toTopOf="@+id/imgTwit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/pecangaan_kulon"
+        android:textColor="@color/hitam"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/colomTwit"
+        app:layout_constraintEnd_toEndOf="@+id/colomTwit"
+        app:layout_constraintTop_toTopOf="@+id/colomTwit" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
